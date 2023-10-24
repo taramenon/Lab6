@@ -1,6 +1,5 @@
-#Norma Marin
-#COP3502C - Software Engineering (Password Encoder/Decoder)
 #Tara M. Pattilachan
+#COP3502C - Software Engineering (Password Encoder/Decoder)
 #10/20/2023
 #Lab 6 - Assignment
 
