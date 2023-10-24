@@ -9,6 +9,7 @@ def encode(password):
     return ''.join(str((int(num) + 3) % 10) for num in str(password))
 
 
+#Norma's decode portion completed
 def decode(password):
     #decodes password
     decode_pass = ""
