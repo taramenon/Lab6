@@ -1,5 +1,6 @@
 #Tara M. Pattilachan
 #COP3502C - Software Engineering (Password Encoder/Decoder)
+# Lab Partner Norma Marin
 #10/20/2023
 #Lab 6 - Assignment
 
@@ -7,6 +8,15 @@
 def encode(password):
     return ''.join(str((int(num) + 3) % 10) for num in str(password))
 
+
+#Norma's decode portion completed
+def decode(password):
+    #decodes password
+    decode_pass = ""
+    for i in encode:
+        decoded = str((int(i) - 3) % 10)
+        decode_pass = decoded
+    return decode_pass
 #Main function 
 def main():
     #Setting encode_pass to string
