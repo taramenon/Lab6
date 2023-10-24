@@ -10,12 +10,12 @@ def encode(password):
 
 
 #Norma's decode portion completed
-def decode(password):
+def decode(encoded_password):
     #decodes password
     decode_pass = ""
-    for i in encode:
+    for i in encoded_password:
         decoded = str((int(i) - 3) % 10)
-        decode_pass = decoded
+        decode_pass += decoded
     return decode_pass
 #Main function 
 def main():
@@ -43,7 +43,7 @@ def main():
         #If option 2, decoder is selected, conditionally requires an encoded password
         elif menu_selection == '2':
             if encode_pass:
-                print(f"The encoded password is {encode_pass}.\n")
+                print(f"The encoded password is {encode_pass}, and the original password is {decode(encode_pass)}.\n")
             else:
                 print("You need a password encoded first!\n")
         #If option 3 is selected
